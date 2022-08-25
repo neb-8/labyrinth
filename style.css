@@ -1,0 +1,147 @@
+html,body {
+    height: 98%;
+    margin: 0px;
+}
+
+#centered {
+    overflow: hidden; /* add this to contain floated children */
+    width: 550px;
+    height: 100%;
+    position:relative;
+    margin:auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    text-align:center;
+}
+canvas,table {
+    float:left; /* add this */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+#messages{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+#information{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+
+#infobtn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    
+}
+
+form{
+    color:black;
+    margin-top: 10px;
+}
+
+
+.active{
+    background-color: chartreuse;
+}
+
+/*
+.data{
+    position: fixed;
+    left: 420px;
+    top: 0;
+}
+*/
+
+table{
+    width: 120px;
+
+}
+
+td{
+    width: 100px;
+    text-align: center;
+}
+
+table, tr, td{
+    border: none;
+    border-collapse: collapse;
+    
+}
+
+#start, #finish{
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    
+    background: url('media/bimage.png');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: center;
+    background-position-y: -14em;
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.readable{
+    background-color: white;
+    height: max-content;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#playAgainbtn{
+    height: min-content;
+}
+
+@media screen and (max-width: 400px){
+    canvas, table{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .data{
+        position: static;
+    }
+    #centered {
+        overflow: unset; /* add this to contain floated children */
+        width: unset;
+        text-align:unset;
+        height: auto;
+    }
+    canvas,table {
+        float:unset; /* add this */
+        top: unset;
+        transform: unset;
+    }
+    #messages{
+        text-align: unset;
+    }
+}

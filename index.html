@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quantik</title>
+</head>
+<body>
+    <div id="centered">
+    <canvas width="400" height="400"></canvas>
+    <table class="data">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td id="w0"></td>
+            <td id="b0"></td>
+        </tr>
+        <tr>
+            <td id="w1"></td>
+            <td id="b1"></td>
+        </tr>
+        <tr>
+            <td id="w2"></td>
+            <td id="b2"></td>
+        </tr>
+        <tr>
+            <td id="w3"></td>
+            <td id="b3"></td>
+        </tr> 
+    </table>
+    </div>
+    <div id="messages"></div>
+    <div id="start">
+        <form class="readable">
+            1. játékos neve<input id="jatekos1" value="1. játékos">
+            2. játékos neve<input id="jatekos2" value="2. játékos">
+            <button id="startbtn" type="button">Start!</button>
+        </form>
+    </div>
+    <div id="finish" class="hidden">
+        <form class="readable">
+            <h1 id="winner"></h1>
+            <button id="playAgainbtn" type="button">Új Játék</button>
+        </form>
+    </div>
+    <div id="information" class="hidden">
+        A játék célja az, hogy elsőként helyezzék le a játékosok a negyedik, <br>
+        többitől különböző formát egy sorba, oszlopba, vagy négyzet alakú <br>
+        területre (színtől függetlenül). Ha egy cellára lehelyeztünk egy <br>
+        alakzatot, akkor annak sorába, oszlopába, vagy négyzet alakú <br>
+        területére nem tudja már egyik játékos sem még egyszer ugyanazt <br>
+        az alakzatot letenni.
+    </div>
+    <button id="infobtn">info</button>
+    <script src="script.js"></script>
+</body>
+</html>
